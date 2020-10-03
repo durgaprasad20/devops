@@ -17,6 +17,11 @@ pipeline{
       sh 'mvn install'
      }
     }
+    stage('mvn version'){
+      steps{
+        sh 'ansible --version'
+      }
+    }
  }
 }
 
